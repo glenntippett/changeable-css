@@ -1,0 +1,75 @@
+:root {
+  --background-color: #000000;
+  --background-color-card: #af0d0d;
+  --shadow-card: rgba(175, 13, 13, 0.5);
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --heading-color: black;
+  --btn-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto
+}
+
+.card {
+  background-color: var(--background-color-card);
+  margin: 24px;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px var(--shadow-card);
+}
+
+.card h1,
+.card h2 {
+  margin-bottom: 8px;
+  color: var(--heading-color);
+}
+
+.card p {
+  font-weight: lighter;
+}
+
+button {
+  margin: 24px;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: var(--btn-color);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--btn-color);
+  color: var(--background-color);
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 350px;
+  }
+}
